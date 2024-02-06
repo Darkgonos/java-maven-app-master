@@ -18,11 +18,11 @@ pipeline {
                 }
             }
         }
-        stage("build image") {
+        stage("test app") {
             steps {
                 script {
-                    echo "building image"
-                    gv.buildImage()
+                    echo "testing app"
+                    gv.testApp()
                 }
             }
         }
